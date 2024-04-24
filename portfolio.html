@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e5c6c6c62a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Maikel's Portfolio</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="https://iskelmaikel.github.io/" class="link"
+          >MN.</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Maikel Niks.</span></h1>
+        <h2 class="about__role">A software developer.</h2>
+        <p class="about__desc">
+			I am a software developer capable of both frontend and backend related work.
+			I have worked with various companies to help develop software and improve
+			virtual environments to improve the productivity and efficiency of people
+			in various fields of expertise such as waste management, education and IoT.
+			In my spare time I am developing a 3D game named Honeywell Village which will be launched to Steam once ready.
+        </p>
+
+        <div class="about__contact center">
+          <!-- <a href="https://example.com"> -->
+            <!-- <span class="btn btn--outline">Resume</span> -->
+          <!-- </a> -->
+
+          <a
+            href="https://github.com/iskelmaikel"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://linkedin.com/in/maikelniks/"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+
+          <a
+            href="https://honeywellvillage.com/"
+            aria-label="HoneywellVillage"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fa-solid fa-gamepad"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>VConsyst</h3>
+            <p class="project__description">
+              Underground waste management and recycling centres. Powered by MS Dynamics 365.
+			  Access management to underground containers with RFID tags. Manage customer billing
+			  for both private and corporate use.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">MS Dynamics 365</li>
+              <li class="project__stack-item">.NET (Framework/Core)</li>
+              <li class="project__stack-item">MS Azure</li>
+              <li class="project__stack-item">Angular</li>
+              <li class="project__stack-item">Blazor</li>
+            </ul>
+
+            <a
+              href="https://vconsyst.com/en-GB"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Hyrde IoT</h3>
+            <p class="project__description">
+              Fleet management and asset tracking. Using the power of IoT to
+			  get the most out of your fleet. Keep track of your assets and
+			  find them anywhere in the world using KeyTelematics and Geotab platforms.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">.NET Core</li>
+              <li class="project__stack-item">MS Azure</li>
+              <li class="project__stack-item">Vue3</li>
+              <li class="project__stack-item">Quasar</li>
+            </ul>
+
+            <a
+              href="https://assettracking.hyrde.nl/"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+            <a
+              href="https://Hyrde.io"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Honeywell Village</h3>
+            <p class="project__description">
+              Welcome to your new home. Your friends are all waiting for you.
+			  Help grow Honeywell Village and create your perfect village.
+			  Invite anybody you want and make the perfect little community together with your friends.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Godot</li>
+              <li class="project__stack-item">GdScript</li>
+            </ul>
+
+            <a
+              href="https://honeywellvillage.com"
+              aria-label="Steam store page"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-steam"></i>
+            </a>
+            <a
+              href="https://honeywellvillage.com"
+              aria-label="Honeywell Village website"
+              class="link link--icon"
+            >
+				<i aria-hidden="true" class="fa-solid fa-gamepad"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">(ASP).NET</li>
+          <li class="skills__list-item btn btn--plain">SQL</li>
+          <li class="skills__list-item btn btn--plain">Azure</li>
+          <li class="skills__list-item btn btn--plain">Angular</li>
+          <li class="skills__list-item btn btn--plain">Vue3</li>
+          <li class="skills__list-item btn btn--plain">React</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+          <li class="skills__list-item btn btn--plain">CI/CD</li>
+          <li class="skills__list-item btn btn--plain">Godot</li>
+          <li class="skills__list-item btn btn--plain">And more...</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:maikelniks@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://github.com/iskelmaikel"
+        class="link footer__link"
+      >
+        Portfolio of Maikel Niks
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
